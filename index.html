@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="screen" id="welcome-screen">
+    <div class="content">
+      <h1>Welcome to Simon Says</h1>
+      <p class="subtitle">Test your memory by repeating the color sequences.</p>
+      <ul class="rules">
+        <li>Watch the sequence of flashing colors.</li>
+        <li>Repeat the sequence by clicking the buttons.</li>
+        <li>If you make a mistake, the game is over.</li>
+        <li>Try to beat your highest score!</li>
+      </ul>
+      <button class="start-btn" id="start-btn">Enter Game</button>
+    </div>
+  </div>
+
+  <div class="screen hidden" id="game-screen">
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <div class="box-container">
+      <div class="line-one">
+        <div class="btn red" id="red"></div>
+        <div class="btn yellow" id="yellow"></div>
+      </div>
+      <div class="line-two">
+        <div class="btn green" id="green"></div>
+        <div class="btn purple" id="purple"></div>
+      </div>
+    </div>
+    <h3 id="high-score">Highest Score: 0</h3>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
